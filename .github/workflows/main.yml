@@ -29,7 +29,7 @@ jobs:
             dist/github-contribution-grid-snake.svg?color_snake=#bf00ff&color_dots=#0d0d2b,#3a0066,#660099,#9900cc,#cc00ff
             dist/github-contribution-grid-snake-dark.svg?color_snake=#bf00ff&color_dots=#0d0d2b,#3a0066,#660099,#9900cc,#cc00ff
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.SNAKE_TOKEN }}
 
       - name: Push to output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
