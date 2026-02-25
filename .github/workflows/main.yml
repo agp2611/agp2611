@@ -1,0 +1,40 @@
+name: Generate Cyberpunk Snake
+
+on:
+  schedule:
+    # Executa a cada 12 horas
+    - cron: "0 */12 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+    - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    permissions:
+      contents: write
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Generate Snake Animation
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/github-contribution-grid-snake.svg?color_snake=#bf00ff&color_dots=#0d0d2b,#3a0066,#660099,#9900cc,#cc00ff
+            dist/github-contribution-grid-snake-dark.svg?color_snake=#bf00ff&color_dots=#0d0d2b,#3a0066,#660099,#9900cc,#cc00ff
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Push to output branch
+        uses: crazy-max/ghaction-github-pages@v3.1.0
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
