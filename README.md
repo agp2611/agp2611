@@ -1,4 +1,4 @@
-# <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=32&duration=1500&pause=1500&color=E580FF&center=false&vCenter=false&width=500&lines=Ol%C3%A1!+%F0%9F%91%BE;Estudante+de+Computa%C3%A7%C3%A3o;Desenvolvedor+e+QA;Bem-vindo+ao+meu+perfil!" alt="Typing SVG" />
+# <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=32&duration=1500&pause=1500&color=E580FF&center=false&vCenter=false&width=500&lines=Ol%C3%A1!+%F0%9F%91%BE;Bem-vindo+ao+meu+perfil!" alt="Typing SVG" />
 
 🎓 Estudante de Ciência da Computação na UFPB
 
